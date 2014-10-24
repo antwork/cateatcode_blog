@@ -1,2 +1,3 @@
+baseurl: /cateatcode_blog
 markdown: rdiscount
 pygments: true
