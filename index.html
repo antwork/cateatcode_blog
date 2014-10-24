@@ -1,11 +1,11 @@
 ---
 layout: default
-title:CatEatCode -- Xu Qiang
+title:『站在巨人的肩膀上』 ♕许强♕
 ---
 
 <div id="home">
-	<h1>Blog Posts</h1>
-	<ul>
+	<h1>博客列表</h1>
+	<ul class="post">
 		{% for post in site.posts %}
 			<li>
 				<span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url}}">{{ post.title }}</a>
@@ -13,4 +13,12 @@ title:CatEatCode -- Xu Qiang
 		{% endfor %}
 	</ul>
 
+	<h1>项目介绍</h1>
+	<ul class="post">
+		{% for post in site.posts %}
+			<li>
+				<span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url}}">{{ post.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
 </div>
